@@ -1,0 +1,6 @@
+framework module SPLog {
+  umbrella header "SPLog-umbrella.h"
+
+  export *
+  module * { export * }
+}

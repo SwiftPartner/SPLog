@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SPLog"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "日志管理工具"
 
   # This description is used to generate tags and improve search results.
@@ -26,6 +26,10 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
     简单的日志管理工具，方便关闭、打开日志信息，方便查看日志信息类型
+    info类型💚💚💚
+    error类型❤️❤️❤️
+    warn类型💛💛💛
+    在区分类型的同时，输入日志所在文件名、方法名和行数
                    DESC
 
   s.homepage     = "https://github.com/SwiftPartner"

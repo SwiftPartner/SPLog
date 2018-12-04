@@ -15,21 +15,21 @@ public class SPLog {
     private init() {
     }
 
-    public static func info(_ item: Any...) {
+    public static func info(file: String = #file, method: String = #function, line: Int = #line, _ item: Any...) {
         if SPLogManager.shared().debuggable {
-            print("💚💚💚", item)
+            print("💚💚💚", (file as NSString).lastPathComponent, method, line, item)
         }
     }
 
-    public static func warn(_ item: Any...) {
+    public static func warn(file: String = #file, method: String = #function, line: Int = #line, _ item: Any...) {
         if SPLogManager.shared().debuggable {
-            print("💛💛💛", item)
+            print("💛💛💛", (file as NSString).lastPathComponent, method, line, item)
         }
     }
 
-    public static func error(_ item: Any...) {
+    public static func error(file: String = #file, method: String = #function, line: Int = #line, _ item: Any...) {
         if SPLogManager.shared().debuggable {
-            print("❤️❤️❤️", item)
+            print("❤️❤️❤️", (file as NSString).lastPathComponent, method, line, item)
         }
     }
 }

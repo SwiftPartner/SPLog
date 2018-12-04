@@ -5,7 +5,7 @@ target 'SPLogExample' do
   use_frameworks!
 
   # Pods for SPLogExample
-pod 'SPLog', :path => '../'
+  pod 'SPLog', :path => '../'
 
   target 'SPLogExampleTests' do
     inherit! :search_paths
